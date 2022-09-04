@@ -1,1 +1,22 @@
-<h5>parent works!</h5>
+<div class="container mt-2">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-description>
+        MAin Adress
+      </mat-panel-description>
+      <mat-panel-description>
+        Address desciption
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <ng-template matExpansionPanelContent>
+      <app-child21></app-child21>
+      <app-child22></app-child22>
+    </ng-template>
+  </mat-expansion-panel>
+</div>
+
+<div class="container  mt-5">
+  <a routerLink="/" class="btn btn-outline-danger">Back</a>
+</div>
+
