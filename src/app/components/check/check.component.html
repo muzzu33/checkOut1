@@ -1,0 +1,70 @@
+<body>
+    <div class="accordion">
+        <div class="item" appExpand style="cursor: pointer;">
+            <p class="number">01</p>
+            <p class="text">Method 1</p>
+            <div class="icon"></div>
+          <div class="hidden-box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+              repellendus cupiditate aperiam! Incidunt amet quo neque.
+            </p>
+            <ul>
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="item" [ngClass]="{open:isOpen === true}">
+          <p class="number">02</p>
+          <p class="text">Method 2</p>
+          <div class="m1">
+              <a style="cursor: pointer;"(click)="load()"> {{ !isOpen ? '+' : '&minus;' }} </a>
+          </div>
+          <div class="hidden-box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+              repellendus cupiditate aperiam! Incidunt amet quo neque.
+            </p>
+            <ul>
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="item">
+          <p class="number">03</p>
+          <p class="text">Method 3</p>
+          <button (click)="load1()" > {{ !isOpen1 ? 'Show' : 'Hide' }} </button>
+          <div class="hidden-box1" *ngIf="isOpen1">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+              repellendus cupiditate aperiam! Incidunt amet quo neque.
+            </p>
+            <ul>
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</body>
+ 
+
